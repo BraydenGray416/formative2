@@ -1,0 +1,80 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$columns: 12;
+$columnWidth: 100% / $columns;
+
+@for $i from 1 through $columns{
+  .col#{$i}{
+    width: $columnWidth * $i;
+
+  }
+}
+
+$offset: 12;
+$offsetMargin: 100% / $offset;
+
+@for $i from 1 through $offset{
+  .offset#{$i}{
+    margin-left: $offsetMargin * $i;
+
+  }
+}
+
+.col{
+  min-height: 100px;
+  float: left;
+  padding: 12px;
+}
+
+.colS{
+  min-height: 50px;
+  float: left;
+  margin-top: 5px;
+}
+
+.row:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.pageContainer{
+    max-width: 1250px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.red{
+  background-color: red;
+}
+
+.green{
+  background-color: green;
+}
+
+.black{
+  background-color: black;
+}
+.grey{
+  background-color: grey;
+}
+
+.footer{
+  max-width: 1250px;
+  min-height: 100px;
+  margin: 0 auto;
+}
+.nav{
+  max-width: 1250px;
+  min-height: 100px;
+  margin: 0 auto;
+  align-content: center;
+}
