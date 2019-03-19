@@ -4,6 +4,13 @@
   padding: 0;
 }
 
+body{
+    background-image: linear-gradient(#696969, #434343);
+    // height 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 $columns: 12;
 $columnWidth: 100% / $columns;
 
@@ -28,12 +35,28 @@ $offsetMargin: 100% / $offset;
   min-height: 100px;
   float: left;
   padding: 12px;
+  background-color: white;
 }
 
 .colS{
   min-height: 50px;
   float: left;
   margin-top: 5px;
+  background-color: white;
+}
+
+.colN{
+  min-height: 50px;
+  float: left;
+  margin-top: 5px;
+
+}
+
+.colL{
+  min-height: 50px;
+  float: left;
+  margin-top: 5px;
+
 }
 
 .row:after {
@@ -46,25 +69,7 @@ $offsetMargin: 100% / $offset;
     max-width: 1250px;
     margin: 0 auto;
     overflow: auto;
-}
 
-.blue{
-  background-color: blue;
-}
-
-.red{
-  background-color: red;
-}
-
-.green{
-  background-color: green;
-}
-
-.black{
-  background-color: black;
-}
-.grey{
-  background-color: grey;
 }
 
 .footer{
