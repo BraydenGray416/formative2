@@ -95,7 +95,8 @@ body {
 .colN {
   min-height: 50px;
   float: left;
-  margin-top: 5px; }
+  margin-top: 5px;
+  text-align: center; }
 
 .colL {
   min-height: 50px;
@@ -119,8 +120,13 @@ body {
 
 .nav {
   max-width: 1250px;
-  min-height: 100px;
+  min-height: 70px;
   margin: 0 auto;
-  align-content: center; }
+  align-content: center;
+  margin-top: 30px; }
+
+h1 {
+  font-family: helvetica;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
