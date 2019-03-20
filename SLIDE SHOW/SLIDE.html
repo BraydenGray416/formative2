@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SLIDE2</title>
+<link rel="stylesheet" type="text/css" href="simple-slideshow-styles.css">
+<script src="better-simple-slideshow.min.js"></script>
+<style>
+    
+    body {
+        margin: 0;
+    }
+
+</style>
+</head>
+
+
+<body>
+<center>
+<table border="0" cellpadding="0" cellspacing="0" width="782px" height="600px" bgcolor="#000000">
+<tr><td>
+
+
+<center><h1> SLIDESHOW </h1></center>
+
+<div class="bss-slides" tabindex="5" autofocus="autofocus">
+    <figure>
+        <img src="images/image1.jpg" width="700px" />
+    </figure>
+
+    <figure>
+        <img src="images/image2.jpg" width="700px" />
+    </figure>
+
+    <figure>
+        <img src="images/image3.jpg" width="700px" />
+    </figure>
+
+    <figure>
+        <img src="images/image4.jpg" width="700px" />
+    </figure>
+
+</div>
+
+
+<script>
+    //makeBSS('.bss-slides');
+
+
+    var opts = {
+        auto : {
+            speed : 3500, 
+            pauseOnHover : true
+        },
+        fullScreen : false, 
+        swipe : true
+    };
+
+    makeBSS('.bss-slides', opts);
+</script>
+</td></tr>
+</table>
+</center>
+</body>
+</html>

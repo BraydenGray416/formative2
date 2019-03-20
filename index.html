@@ -5,6 +5,7 @@
     <title>Formative 2</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="SLIDE SHOW/better-simple-slideshow.min.js"></script>
   </head>
   <body>
     <div class="nav">
@@ -23,7 +24,7 @@
           <p> Unity Books is an award-winning independent bookshop comprised of two sister-stores in Wellington and Auckland. We do everything we can to already have what you want on the shelves, but we also pride ourselves on being expert book hunters, and we’re happy to help you track down anything that you like. We excel at special orders and can import odd, mysterious titles from across oceans just for you.</p>
           <br>
           <br>
-          <div class="col col2 offset2 book"><img src="assets/book1.jpg" height="200px;"><br>
+          <!-- <div class="col col2 offset2 book"><img src="assets/book1.jpg" height="200px;"><br>
             <p class="bookCap">The Wall by John Lanchester</p>
           </div>
           <div class="col col2 offset1 book"><img src="assets/book2.jpg" height="200px;"><br>
@@ -31,14 +32,82 @@
           </div>
           <div class="col col2 offset1 book"><img src="assets/book3.jpg" height="200px;"><br>
             <p class="bookCap">A Long Night In Paris by Dov Alfon</p>
-          </div>
+          </div> -->
         </div>
       </div>
+
+
+
+      <tr><td>
+        <center>
+      <div class="bss-slides" tabindex="5" autofocus="autofocus">
+          <figure>
+              <img src="assets/book1.jpg" alt="ss1" 	height="100%"/>
+          </figure>
+
+          <figure>
+              <img src="assets/book2.jpg" alt="ss2" height="100%" />
+          </figure>
+
+      	<figure>
+              <img src="assets/book3.jpg" alt="ss3" height="100%" />
+          </figure>
+
+      	<figure>
+              <img src="assets/book1.jpg" alt="ss4" height="100%" />
+          </figure>
+
+      	<figure>
+              <img src="assets/book2.jpg" alt="ss5" height="100%" />
+          </figure>
+
+      	<figure>
+              <img src="assets/book3.jpg" alt="ss6" height="100%" />
+          </figure>
+
+      	<figure>
+              <img src="assets/book1.jpg" alt="ss7" height="100%" />
+          </figure>
+
+      	<figure>
+              <img src="assets/book2.jpg" alt="ss8" height="100%" />
+          </figure>
+
+      	<figure>
+              <img src="assets/book3.jpg" alt="ss9" height="100%" />
+          </figure>
+
+        </center>
+      </div>
+
+
+
+
     </div>
-    <div class="footer grey">
-      <div class="colS col3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <div class="footer black">
+      <div class="colS col2 offset1"><b>Unity Books Auckland:</b> <br>19 High Street, Auckland 1010<br><b>Phone:</b> 09 307 0731<br>shop@unitybooksauckland.co.nz</div>
       <div class="colS col4 offset1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-      <div class="colS col3 offset1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div class="colS col2 offset1"><b>Unity Books Wellington:</b> <br>57 Willis Street, Wellington 6011<br><b>Phone:</b> 04 499 4245 <br>wellington@unitybooks.co.nz</div>
     </div>
+
+
+
+    <script>
+        //makeBSS('.bss-slides');
+
+
+        var opts = {
+            auto : {
+                speed : 3500,
+                pauseOnHover : true
+            },
+            fullScreen : false,
+            swipe : true
+        };
+
+        makeBSS('.bss-slides', opts);
+    </script>
+    </td></tr>
+
   </body>
 </html>
